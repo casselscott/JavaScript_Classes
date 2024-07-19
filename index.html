@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation with jQuery</title>
+    <style>
+        .error {
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign Up Form</h1>
+    <form id="signUpForm">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <span class="error" id="nameError">Name is required</span>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email">
+            <span class="error" id="emailError">Invalid email address</span>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            <span class="error" id="passwordError">Password must be at least 8 characters long</span>
+        </div>
+        <button type="submit">Sign Up</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="validate.js"></script>
+</body>
+</html>
